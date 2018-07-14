@@ -26,7 +26,7 @@ export default class Square extends React.Component<InterfaceSquareProps, {}> { 
     return ( // 返す
       <button className="square" onClick={this.props.onClick}>
         {this.props.value}
-      </button> //　ボタンを設置。クリックするとthis.props.onClickを呼び出す。ボタンにはthis.props.valueを表示
+      </button> // ボタンを設置。クリックするとthis.props.onClickを呼び出す。ボタンにはthis.props.valueを表示
     );
   }
 

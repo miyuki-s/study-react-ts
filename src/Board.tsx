@@ -50,7 +50,7 @@ export default class Board extends React.Component<{}, InterfaceBoardState> { //
   }
 
   private handleClick(i:number):void { // handleClickという関数をiを数字の引数として
-    const bufferSquares = this.state.squares.slice(); //this.state.squaresの配列の中身をコピーしてbufferSquaresに代入(constなので固定)
+    const bufferSquares = this.state.squares.slice(); // this.state.squaresの配列の中身をコピーしてbufferSquaresに代入(constなので固定)
     // bufferSquares[i] = "X";
     if (this.calculateWinner(this.state.squares) || this.state.squares[i]) {
      return; // もしthis.state.squaresを引数にとるcalculateWinnerまたはthis.state.squares[i]が空でないならここで処理を終了する

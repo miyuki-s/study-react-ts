@@ -37,7 +37,7 @@ export default class Board extends React.Component<InterfaceSquareProps, {}> { /
   }
 
   private renderSquare(i:number):any { // 数字iを引数にもつrenderSquareという関数は何かしらの型のものを返す
-    return <Square value={this.props.squares[i]} onClick={this.props.onClick.bind(this, i)}/>; // Squareクラスの{}this.state.squares[i]
+    return <Square value={this.props.squares[i]} onClick={this.props.onClick.bind(this, i)}/>; // Squareクラスのvalueにthis.state.squares[i]を代入、クリックするとthisとiを結びつけたthis.props.onClickを呼び出す
   }
 
 }
